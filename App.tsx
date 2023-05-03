@@ -1,30 +1,36 @@
 import { View, Text, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
-import EffectSample from './lessons/effectSample/EffectSample'
-import Box from './lessons/propSample/Box'
-import ProductList from './lessons/flatListSample/ProductList'
-import AddProduct from './lessons/axiosSample/AddProduct'
 import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import HomeScreen from './lessons/navigationSample/HomeScreen'
-import AboutScreen from './lessons/navigationSample/AboutScreen'
-import SupplierList from './lessons/navigationSample/SupplierList'
-import SupplierDetail from './lessons/navigationSample/SupplierDetail'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './lessons/navigationSample/HomeScreen';
+import AboutScreen from './lessons/navigationSample/AboutScreen';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import ProductMainStack from './lessons/stack/ProductMainStack';
 
-const Stack = createNativeStackNavigator();
+
+const Tab = createBottomTabNavigator();
 
 const App = () => {
 
 
   return (<>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="About" component={AboutScreen} />
-        <Stack.Screen name="Suppliers" component={SupplierList} />
-        <Stack.Screen name="SupplierDetail" component={SupplierDetail} />
-
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen
+          name="Home3"
+          component={HomeScreen}
+          options={{
+            tabBarIcon: () => <MaterialCommunityIcons name="home" size={26} />
+          }}
+        />
+        <Tab.Screen
+          name="Products"
+          component={ProductMainStack}
+          options={{
+            headerShown: false
+          }}
+        />
+      </Tab.Navigator>
     </NavigationContainer>
   </>
   )

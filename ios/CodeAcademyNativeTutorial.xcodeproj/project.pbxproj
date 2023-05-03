@@ -37,6 +37,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CodeAcademyNativeTutorial/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CodeAcademyNativeTutorial/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1ADBB92A0225D2008210DC /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-CodeAcademyNativeTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeAcademyNativeTutorial.debug.xcconfig"; path = "Target Support Files/Pods-CodeAcademyNativeTutorial/Pods-CodeAcademyNativeTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-CodeAcademyNativeTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeAcademyNativeTutorial.release.xcconfig"; path = "Target Support Files/Pods-CodeAcademyNativeTutorial/Pods-CodeAcademyNativeTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests/Pods-CodeAcademyNativeTutorial-CodeAcademyNativeTutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		13B07FAE1A68108700A75B9A /* CodeAcademyNativeTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				1D1ADBB82A0225AE008210DC /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -94,6 +96,14 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = CodeAcademyNativeTutorial;
+			sourceTree = "<group>";
+		};
+		1D1ADBB82A0225AE008210DC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D1ADBB92A0225D2008210DC /* MaterialCommunityIcons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
