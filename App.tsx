@@ -6,6 +6,7 @@ import HomeScreen from './lessons/navigationSample/HomeScreen';
 import AboutScreen from './lessons/navigationSample/AboutScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import ProductMainStack from './lessons/stack/ProductMainStack';
+import DeviceStack from './lessons/stack/DeviceStack';
 
 
 const Tab = createBottomTabNavigator();
@@ -17,7 +18,7 @@ const App = () => {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen
-          name="Home3"
+          name="Home"
           component={HomeScreen}
           options={{
             tabBarIcon: () => <MaterialCommunityIcons name="home" size={26} />
@@ -27,7 +28,17 @@ const App = () => {
           name="Products"
           component={ProductMainStack}
           options={{
-            headerShown: false
+            headerShown: false,
+            tabBarIcon: () => <MaterialCommunityIcons name="star" size={26} />
+          }}
+        />
+
+        <Tab.Screen
+          name="Device"
+          component={DeviceStack}
+          options={{
+            headerShown: false,
+            tabBarIcon: () => <MaterialCommunityIcons name="star" size={26} />
           }}
         />
       </Tab.Navigator>

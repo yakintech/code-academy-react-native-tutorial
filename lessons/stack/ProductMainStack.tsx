@@ -11,9 +11,17 @@ const ProductMainStack = () => {
     return (
         <>
             <ProductStack.Navigator>
-                <ProductStack.Screen name="ProductList" component={ProductList} />
+                <ProductStack.Screen
+                    name="ProductList"
+                    component={ProductList}
+                    options={{ title: 'Product List' }}
+                />
                 <ProductStack.Screen name="AddProduct" component={AddProduct} />
-                <ProductStack.Screen name="ProductDetail" component={ProductDetail} />
+                <ProductStack.Screen
+                    name="ProductDetail"
+                    component={ProductDetail}
+                    options={({ route } : any) => ({ title: route.params.name })}
+                />
             </ProductStack.Navigator>
         </>
     )

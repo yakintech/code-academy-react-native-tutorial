@@ -1,7 +1,17 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const ProductDetail = () => {
+
+  useEffect(() => {
+    
+  
+  }, [])
+
+
+
+  
+
   return (
     <View>
       <Text>ProductDetail</Text>
