@@ -7,6 +7,7 @@ import AboutScreen from './lessons/navigationSample/AboutScreen';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import ProductMainStack from './lessons/stack/ProductMainStack';
 import DeviceStack from './lessons/stack/DeviceStack';
+import ToDoScreen from './lessons/todoListAsyncStorage/ToDoScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +20,7 @@ const App = () => {
       <Tab.Navigator>
         <Tab.Screen
           name="Home"
-          component={HomeScreen}
+          component={ToDoScreen}
           options={{
             tabBarIcon: () => <MaterialCommunityIcons name="home" size={26} />
           }}

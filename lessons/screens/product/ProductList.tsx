@@ -10,8 +10,6 @@ const ProductList = ({ navigation }: any) => {
 
 
     useEffect(() => {
-
-        console.log('Hello Product List');
         
         axios.get('https://northwind.vercel.app/api/products')
             .then(res => {
